@@ -12,20 +12,22 @@ public class Withholding {
         income = input.nextDouble();
 
         //Beginning an if-else statement for the four statements//
-        // < 500$/10% , >= $500 < $1500/15%,>= $1500 < $2500/20%, >= $2500/30% //
+        //income < 500$/10% //
         if (income < 500.00){
             income = income * .1;
             System.out.println("Your average tax withholding is:" + " " + income);
-
         }
+        //income >= $500 < $1500/15%,>= $1500 //
         else if (income >= 500.00 && income < 1500.00) {
             income = income * .15;
             System.out.println("Your average tax withholding is:" + " " + income);
         }
+        //income >= 1500 < 2500/20% //
          else if (income >= 1500.00 &&  income < 2500.00){
              income = income * .2;
             System.out.println("Your average tax withholding is:" + " " + income);
         }
+        //income > 2500/30 //
          else  {
              income = income * .3;
             System.out.println("Your average tax withholding is:" + " " + income);
