@@ -17,7 +17,7 @@ public class Withholding {
             income = income * .1;
             System.out.println("Your average tax withholding is:" + " " + income);
         }
-        //income >= $500 < $1500/15%,>= $1500 //
+        //income >= $500 < $1500/15% //
         else if (income >= 500.00 && income < 1500.00) {
             income = income * .15;
             System.out.println("Your average tax withholding is:" + " " + income);
